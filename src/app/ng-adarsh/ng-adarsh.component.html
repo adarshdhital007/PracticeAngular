@@ -1,1 +1,28 @@
-<h1 class="text-center pt-5 mt-4 min-v-100">ng-adarsh works!</h1>
+<div>Current Date:</div>
+<p class="font-weight-bold">{{ currentDate | date }}</p>
+
+<div>Name (Uppercase):</div>
+<p>{{ name | uppercase }}</p>
+
+<div>Temperature (Formatted):</div>
+<p>{{ temperature | number:'1.1-1' }}</p>
+
+<div>Message (Lowercase):</div>
+<p>{{ message | lowercase }}</p>
+
+<div>Amount (Formatted):</div>
+<p>{{ amount | number:'2.2-2' }}</p>
+
+<div>Original Price :</div>
+<p>{{ price | currency }}</p>
+
+<div>Discounted Price :</div>
+<p *ngIf="discountApplied">{{ discountedPrice | currency }}</p>
+
+<div>Discount Amount:</div>
+<p>{{ (isDiscounted ? (price - calculateDiscountedPrice(price)) : 0) | currency }}</p>
+
+<button (click)="toggleDiscount()" [disabled]="discountApplied">
+    {{ discountApplied ? 'Discount Applied' : 'Toggle Discount' }}
+  </button>
+  

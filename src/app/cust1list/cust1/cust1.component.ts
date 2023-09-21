@@ -13,7 +13,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
         background-color: #fefbd8;
         margin: 10px;
         padding: 10px;
-        cursor: pointer; /* Add cursor style to indicate it's clickable */
+        cursor: pointer; 
       }
     `,
   ],

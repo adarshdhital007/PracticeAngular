@@ -14,6 +14,7 @@ import { Cust1Component } from './cust1list/cust1/cust1.component';
 import { Cust1ListComponent } from './cust1list/cust1list.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
