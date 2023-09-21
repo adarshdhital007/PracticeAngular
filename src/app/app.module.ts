@@ -10,6 +10,8 @@ import { LayoutComponent } from './ColorBlocks/layout.component';
 import { ClassHighlightComponent } from './classhighlight/classhighlight.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerComponent } from './customer-list/customer/customer.component';
+import { Cust1Component } from './cust1list/cust1/cust1.component';
+import { Cust1ListComponent } from './cust1list/cust1list.component';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { CustomerComponent } from './customer-list/customer/customer.component';
     ClassHighlightComponent,
     CustomerListComponent,
     CustomerComponent,
-    
+    Cust1Component,
+    Cust1ListComponent,
   ],
   imports: [
     BrowserModule,AppRoutingModule,FormsModule,ReactiveFormsModule

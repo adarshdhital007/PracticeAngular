@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div class="customer">
       <div >
-        {{ customer }}
+        [ customer ]
       </div>
     </div>
   `,
@@ -18,10 +18,8 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class CustomerComponent implements OnInit {
-  customer: string = "Taylor";
-  
-  constructor() { }
 
+  constructor() { }
   ngOnInit() {
   }
 }
