@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class NgAdarshComponent {
   currentDate: Date = new Date();
-  name: string = 'John Doe';
+  name: string = 'Adarsh Dhital';
   price: number = 19.99;
   temperature: number = 25.5;
   message: string = 'Hello, Angular Pipes!';

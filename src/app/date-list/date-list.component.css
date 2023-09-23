@@ -1,0 +1,9 @@
+.list-group-item:hover{
+    color:white;
+    cursor: pointer;
+    background-color: #50C878;
+}
+
+.song-1:hover{
+background:green;
+}
