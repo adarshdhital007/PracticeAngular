@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Joke } from './joke/joke.component';
 
 @Component({
@@ -6,7 +6,7 @@ import { Joke } from './joke/joke.component';
   templateUrl: './joke-list.component.html',
 })
 export class JokeListComponent {
-  jokes: Joke[];
+  jokes: Joke[] = [];
 
   constructor() {
     this.jokes = [
@@ -16,9 +16,18 @@ export class JokeListComponent {
       new Joke("How does a penguin build its house?", "Igloos it together!"),
       new Joke("Why don't skeletons fight each other?", "Because they don't have the guts!"),
     ];
-    
   }
-  addJoke(joke:Joke) {
-    this.jokes.unshift(joke);
-}
+
+  addJoke(newJoke: Joke) {
+    // Check if the setup already exists
+    const existingJoke = this.jokes.find(joke => joke.setup === newJoke.setup);
+
+    if (existingJoke) {
+      alert('A joke with the same setup already exists. Please try with a different setup.');
+      return;
+    }
+
+    // If setup is unique, add the new joke
+    this.jokes.unshift(newJoke);
+  }
 }
