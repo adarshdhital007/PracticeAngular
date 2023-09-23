@@ -12,6 +12,7 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerComponent } from './customer-list/customer/customer.component';
 import { Cust1Component } from './cust1list/cust1/cust1.component';
 import { Cust1ListComponent } from './cust1list/cust1list.component';
+import { FormComponentComponent } from './form-component/form-component.component';
 
 
 
@@ -26,6 +27,7 @@ import { Cust1ListComponent } from './cust1list/cust1list.component';
     CustomerComponent,
     Cust1Component,
     Cust1ListComponent,
+    FormComponentComponent,
   ],
   imports: [
     BrowserModule,AppRoutingModule,FormsModule,ReactiveFormsModule

@@ -6,6 +6,7 @@ import { LayoutComponent } from './ColorBlocks/layout.component';
 import { ClassHighlightComponent } from './classhighlight/classhighlight.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { Cust1ListComponent } from './cust1list/cust1list.component';
+import { FormComponentComponent } from './form-component/form-component.component';
 const routes: Routes = [
   { path: 'adarsh', component: NgAdarshComponent },
   { path: 'switch', component: NgSwitchComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'highlight', component: ClassHighlightComponent },
   { path: 'clist', component: CustomerListComponent },
   { path: 'c1list', component: Cust1ListComponent },
+  { path: 'form', component: FormComponentComponent },
   // You can add more routes here if needed
   // For example, a default route or a wildcard route
   // { path: '', redirectTo: '/adarsh', pathMatch: 'full' },
