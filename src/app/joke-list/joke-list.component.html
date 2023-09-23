@@ -3,9 +3,11 @@
   <div class="card-body">
     <div class="jokes-container">
       <app-joke-add (jokeCreated)="addJoke($event)"></app-joke-add>
-      <div class="list-group">
-        <app-joke *ngFor="let joke of jokes" [joke]="joke"></app-joke>
-      </div>
+      <app-joke
+        *ngFor="let joke of jokes"
+        [joke]="joke"
+        (jokeDeleted)="deleteJoke($event)"
+      ></app-joke>
     </div>
   </div>
 </div>

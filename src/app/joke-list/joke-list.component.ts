@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Pipe } from '@angular/core';
 import { Joke } from './joke/joke.component';
 
 @Component({
@@ -26,8 +26,15 @@ export class JokeListComponent {
       alert('A joke with the same setup already exists. Please try with a different setup.');
       return;
     }
-
     // If setup is unique, add the new joke
     this.jokes.unshift(newJoke);
   }
+  
+  deleteJoke(joke:Joke) {
+    let indexToDelete = this.jokes.indexOf(joke);
+    if (indexToDelete != -1) {
+      this.jokes.splice(indexToDelete, 1);
+    }
+  }
+
 }

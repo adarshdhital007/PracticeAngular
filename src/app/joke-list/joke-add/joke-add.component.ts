@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { Joke } from '../joke-list/joke/joke.component';
+import { Joke } from '../joke/joke.component';
 
 @Component({
   selector: 'app-joke-add',
@@ -7,7 +7,8 @@ import { Joke } from '../joke-list/joke/joke.component';
 })
 export class JokeAddComponent {
   @Output() jokeCreated = new EventEmitter<Joke>();
-
+  @Output() jokeDeleted = new EventEmitter<Joke>();
+  
   constructor() {}
 
   createJoke(setup: string, punchline: string) {

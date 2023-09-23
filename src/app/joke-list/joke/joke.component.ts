@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 export class Joke {
+
   public setup: string;
   public punchline: string;
   public hide: boolean;
@@ -14,17 +15,24 @@ export class Joke {
   toggle() {
     this.hide = !this.hide;
   }
+
 }
 @Component({
   selector: 'app-joke',
   templateUrl: './joke.component.html',
-  styleUrls: ['./joke.component.css']
 })
 export class JokeComponent {
-@Input() joke!: Joke;
+
+  @Input() joke!: Joke;
+  @Output() jokeDeleted = new EventEmitter<any>();
 
   toggle() {
     this.joke.toggle();
   }
+  onDelete() {
+    // Emit the event to delete the joke
+    this.jokeDeleted.emit(this.joke);
+  }
+
 
 }

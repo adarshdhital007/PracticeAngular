@@ -17,7 +17,7 @@ import { DateListComponent } from './date-list/date-list.component';
 import { FilterByPipe } from './filter.pipe';
 import { JokeListComponent } from './joke-list/joke-list.component';
 import { JokeComponent } from './joke-list/joke/joke.component';
-import { JokeAddComponent } from './joke-add/joke-add.component';
+import { JokeAddComponent } from './joke-list/joke-add/joke-add.component';
 
 
 

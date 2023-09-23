@@ -2,6 +2,7 @@
   <div class="card-body">
     <h4 class="card-title">{{ joke.setup }}</h4>
     <p class="card-text" *ngIf="!joke.hide">{{ joke.punchline }}</p>
-    <button class="btn btn-primary" (click)="toggle()">Tell Me the Joke</button>
+    <a class="btn btn-primary" (click)="toggle()">Tell Me the Joke</a>
+    <a class="btn ml-4 btn-danger" (click)="onDelete()">Delete</a>
   </div>
 </div>
