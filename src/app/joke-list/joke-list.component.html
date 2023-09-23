@@ -1,8 +1,11 @@
 <div class="card">
-  <div class="card-header">
-    <h2 class="text-center">Jokes</h2>
-  </div>
+  <h2 class="card-header text-center">Jokes</h2>
   <div class="card-body">
-    <app-joke *ngFor="let joke of jokes" [joke]="joke"></app-joke>
+    <div class="jokes-container">
+      <app-joke-add (jokeCreated)="addJoke($event)"></app-joke-add>
+      <div class="list-group">
+        <app-joke *ngFor="let joke of jokes" [joke]="joke"></app-joke>
+      </div>
+    </div>
   </div>
 </div>

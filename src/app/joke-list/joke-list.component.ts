@@ -10,10 +10,15 @@ export class JokeListComponent {
 
   constructor() {
     this.jokes = [
-      new Joke("What do you call a fish with no eyes?", "Fsh!"),
-      new Joke("What do you call a deer with no eyes?", "No idear!"),
-      new Joke("What do you call a lazy kangaroo?", "A pouch potato!"),
-      new Joke("What do you call a bee that can't make up its mind?", "A maybe!"),
+      new Joke("Why don't scientists trust atoms?", "Because they make up everything!"),
+      new Joke("What did one wall say to the other wall?", "I'll meet you at the corner!"),
+      new Joke("Why was the math book sad?", "Because it had too many problems!"),
+      new Joke("How does a penguin build its house?", "Igloos it together!"),
+      new Joke("Why don't skeletons fight each other?", "Because they don't have the guts!"),
     ];
+    
   }
+  addJoke(joke:Joke) {
+    this.jokes.unshift(joke);
+}
 }
