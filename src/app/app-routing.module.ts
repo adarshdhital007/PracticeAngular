@@ -8,6 +8,7 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { Cust1ListComponent } from './cust1list/cust1list.component';
 import { FormComponentComponent } from './form-component/form-component.component';
 import { DateListComponent } from './date-list/date-list.component';
+import { JokeListComponent } from './joke-list/joke-list.component';
 const routes: Routes = [
   { path: 'adarsh', component: NgAdarshComponent },
   { path: 'switch', component: NgSwitchComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'c1list', component: Cust1ListComponent },
   { path: 'form', component: FormComponentComponent },
   { path: 'date', component: DateListComponent },
+  { path: 'joke', component: JokeListComponent },
   // You can add more routes here if needed
   // For example, a default route or a wildcard route
   // { path: '', redirectTo: '/adarsh', pathMatch: 'full' },

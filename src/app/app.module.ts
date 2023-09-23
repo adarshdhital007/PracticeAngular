@@ -13,9 +13,10 @@ import { CustomerComponent } from './customer-list/customer/customer.component';
 import { Cust1Component } from './cust1list/cust1/cust1.component';
 import { Cust1ListComponent } from './cust1list/cust1list.component';
 import { FormComponentComponent } from './form-component/form-component.component';
-
 import { DateListComponent } from './date-list/date-list.component';
 import { FilterByPipe } from './filter.pipe';
+import { JokeListComponent } from './joke-list/joke-list.component';
+import { JokeComponent } from './joke-list/joke/joke.component';
 
 
 
@@ -33,6 +34,8 @@ import { FilterByPipe } from './filter.pipe';
     FormComponentComponent,
     DateListComponent,
     FilterByPipe,
+    JokeListComponent,
+    JokeComponent,
   ],
   imports: [
     BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule
