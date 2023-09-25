@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-cust1list',
   template: `
     <div class="customerList">
-      <p>
+      <p class='custname'>
         Customers
       </p>
       <app-cust1 *ngFor="let customer of customerList" [customer]="customer" (clicked)="onCustomerClicked($event)"></app-cust1>

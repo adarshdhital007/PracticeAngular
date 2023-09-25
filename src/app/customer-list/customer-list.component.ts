@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-customer-list',
   template: `
     <div class="customerList">
-      <p>
+      <p class='cus'>
         Customers 
       </p>
       <app-customer></app-customer>

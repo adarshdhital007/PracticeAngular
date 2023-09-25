@@ -1,10 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
+body.dark-mode {
+  color: white;
+  background-color: #333;
+}
 
-.h11{
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    min-height:100vh;
-    font-weight: bolder;
+
+/* Regular Mode */
+.taylor-list:hover {
+  color: #333;
+  cursor: pointer;
+  background-color: #50c878;
+}
+
+body.dark-mode .taylor-list {
+  color: white;
+  background-color: #333;
+}
+
+body.dark-mode .taylor-list:hover {
+  cursor: pointer;
+  background-color: #50c878;
+}
+
+/* Dark Mode */
+
+
+.navbar-brand {
+  color: black;
+
+}
+body.dark-mode .navbar-brand {
+  color: white;
+
+}
+
+.navdemo{
+  background-color: white;
+  color:black;
+}
+
+body.dark-mode .mainjoke{
+  color:white;
+  background-color: #333;
+}
+body.dark-mode .navdemo{
+  background-color: #333;
+}
+body.dark-mode .navdemo1:hover{
+  background-color: red;
+}
+
+.navbar {
+  color: white;
+}
+.navbar:hover {
+  color: white;
+}
+
+body.dark-mode .main {
+  color: #333;
+  background-color: #333;
+}
+
+
+body.dark-mode .taylor-all {
+  color: white;
+  background-color: #333;
+}
+
+body.dark-mode .searcher {
+  color: white;
+  background-color: #333;
+}
+
+body.dark-mode .names {
+  color: black;
+}
+
+.names{
+  color:white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+body.dark-mode .cus {
+  color: white;
+}
+
+body.dark-mode .createjoke {
+  color: white;
+  background-color: #333;
+}
+
+body.dark-mode .sjoke {
+  background-color: #333;
+}
+
+body.dark-mode .customerList {
+  color:black;
+  background-color: #333;
+}
+
+body.dark-mode .custname {
+  color:white;
+}
+
+body.dark-mode .animals {
+  color:black;
+}
+
+
+/* Dark Mode */
+body.dark-mode .navbar-toggler {
+  color: black; /* Text color in dark mode */
+  background-color: white; /* Background color in dark mode */
 }

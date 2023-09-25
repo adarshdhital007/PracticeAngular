@@ -5,7 +5,7 @@
     <option *ngFor="let option of options" [value]="option">{{ option }}</option>
   </select>
 
-  <div [ngClass]="{
+  <div class='names' [ngClass]="{
     'block1': selection === 'name',
     'block2': selection === 'address',
     'block3': selection === 'other'

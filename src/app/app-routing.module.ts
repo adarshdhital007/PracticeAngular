@@ -9,7 +9,10 @@ import { Cust1ListComponent } from './cust1list/cust1list.component';
 import { FormComponentComponent } from './form-component/form-component.component';
 import { DateListComponent } from './date-list/date-list.component';
 import { JokeListComponent } from './joke-list/joke-list.component';
+import { Layout1Component } from './layout1/layout1.component';
+
 const routes: Routes = [
+  { path: '', component: Layout1Component },
   { path: 'adarsh', component: NgAdarshComponent },
   { path: 'switch', component: NgSwitchComponent },
   { path: 'layout', component: LayoutComponent },

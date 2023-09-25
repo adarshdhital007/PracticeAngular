@@ -20,6 +20,9 @@ import { JokeComponent } from './joke-list/joke/joke.component';
 import { JokeAddComponent } from './joke-list/joke-add/joke-add.component';
 import { FormDataService } from './form-component/form-data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { Layout1Component } from './layout1/layout1.component';
+import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component';
+import { DarkModeService } from './dark-mode.service';
 
 @NgModule({
   declarations: [
@@ -38,11 +41,13 @@ import { HttpClientModule } from '@angular/common/http';
     JokeListComponent,
     JokeComponent,
     JokeAddComponent,
+    Layout1Component,
+    DarkModeToggleComponent,
   ],
   imports: [
     BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule
   ],
-  providers: [FormDataService],
+  providers: [FormDataService,DarkModeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
