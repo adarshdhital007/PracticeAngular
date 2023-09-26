@@ -1,14 +1,35 @@
-body.dark-mode {
-  color: white;
-  background-color: #333;
-}
-
-
 /* Regular Mode */
 .taylor-list:hover {
   color: #333;
   cursor: pointer;
   background-color: #50c878;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.names {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.navdemo {
+  background-color: white;
+  color: black;
+}
+.navbar {
+  color: white;
+}
+.navbar:hover {
+  color: white;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  color: white;
+  background-color: #333;
 }
 
 body.dark-mode .taylor-list {
@@ -21,46 +42,26 @@ body.dark-mode .taylor-list:hover {
   background-color: #50c878;
 }
 
-/* Dark Mode */
-
-
-.navbar-brand {
-  color: black;
-
-}
 body.dark-mode .navbar-brand {
   color: white;
-
 }
 
-.navdemo{
-  background-color: white;
-  color:black;
-}
-
-body.dark-mode .mainjoke{
-  color:white;
+body.dark-mode .mainjoke {
+  color: white;
   background-color: #333;
 }
-body.dark-mode .navdemo{
+body.dark-mode .navdemo {
   background-color: #333;
 }
-body.dark-mode .navdemo1:hover{
+
+body.dark-mode .navdemo1:hover {
   background-color: red;
-}
-
-.navbar {
-  color: white;
-}
-.navbar:hover {
-  color: white;
 }
 
 body.dark-mode .main {
   color: #333;
   background-color: #333;
 }
-
 
 body.dark-mode .taylor-all {
   color: white;
@@ -74,12 +75,6 @@ body.dark-mode .searcher {
 
 body.dark-mode .names {
   color: black;
-}
-
-.names{
-  color:white;
-  font-size: 30px;
-  font-weight: 500;
 }
 
 body.dark-mode .cus {
@@ -96,21 +91,19 @@ body.dark-mode .sjoke {
 }
 
 body.dark-mode .customerList {
-  color:black;
+  color: black;
   background-color: #333;
 }
 
 body.dark-mode .custname {
-  color:white;
+  color: white;
 }
 
 body.dark-mode .animals {
-  color:black;
+  color: black;
 }
 
-
-/* Dark Mode */
 body.dark-mode .navbar-toggler {
-  color: black; /* Text color in dark mode */
-  background-color: white; /* Background color in dark mode */
+  color: black;
+  background-color: white;
 }
