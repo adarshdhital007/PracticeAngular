@@ -10,7 +10,8 @@ import { FormComponentComponent } from './form-component/form-component.componen
 import { DateListComponent } from './date-list/date-list.component';
 import { JokeListComponent } from './joke-list/joke-list.component';
 import { Layout1Component } from './layout1/layout1.component';
-
+import { WeatherReportComponent } from './weather-report/weather-report.component';
+import { WeatherUIComponent } from './weather-ui/weather-ui.component';
 const routes: Routes = [
   { path: '', component: Layout1Component },
   { path: 'adarsh', component: NgAdarshComponent },
@@ -22,10 +23,15 @@ const routes: Routes = [
   { path: 'form', component: FormComponentComponent },
   { path: 'date', component: DateListComponent },
   { path: 'joke', component: JokeListComponent },
-  // You can add more routes here if needed
-  // For example, a default route or a wildcard route
-  // { path: '', redirectTo: '/adarsh', pathMatch: 'full' },
-  // { path: '**', component: PageNotFoundComponent },
+  {
+    path: 'weather',
+    component: WeatherUIComponent,
+    children: [
+      {
+        path: ':cityName', // Define a parameter named cityName
+        component: WeatherReportComponent,
+      }
+    ],}
 ];
 
 @NgModule({

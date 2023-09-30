@@ -7,7 +7,7 @@
   <!-- Display a list of songs and their release dates with unique CSS classes -->
   <div class=" d-flex justify-content-center align-items-center mt-3">
     <ul class="taylor list-group">
-      <li class="taylor-list list-group-item" *ngFor="let info of songInfo | filterBy: searchTerm" [class]="info.cssClass">
+      <li class="taylor-list list-group-item" *ngFor="let info of songInfo | filterBy: searchTerm" >
         {{ info.name }} - Released on {{ info.date | date:'longDate' }}
       </li>
     </ul>

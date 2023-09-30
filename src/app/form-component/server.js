@@ -10,13 +10,13 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// PostgreSQL configuration
+// PostgreSQL 
 const pool = new Pool({
   user: 'adarshadhital',
   host: 'localhost',
-  database: 'adarshadhital', // Replace with your database name
+  database: 'adarshadhital', 
   password: 'password',
-  port: 5432, // Default PostgreSQL port
+  port: 5432, 
 });
 
 // Define an API route for saving form data

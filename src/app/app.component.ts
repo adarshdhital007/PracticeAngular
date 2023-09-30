@@ -11,7 +11,6 @@ export class AppComponent implements OnInit {
   constructor(private darkModeService: DarkModeService) {} // Inject DarkModeService
 
   ngOnInit(): void {
-
-    this.darkModeService.enableDarkMode();
+   // this.darkModeService.enableDarkMode();
   }
 }

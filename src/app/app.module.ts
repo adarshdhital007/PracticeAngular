@@ -23,7 +23,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { Layout1Component } from './layout1/layout1.component';
 import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component';
 import { DarkModeService } from './dark-mode.service';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LocalMaterialModule } from './shared/local-material.module';
+import { WeatherReportComponent } from './weather-report/weather-report.component';
+import { WeatherUIComponent } from './weather-ui/weather-ui.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,9 +46,11 @@ import { DarkModeService } from './dark-mode.service';
     JokeAddComponent,
     Layout1Component,
     DarkModeToggleComponent,
+    WeatherReportComponent,
+    WeatherUIComponent,
   ],
   imports: [
-    BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule
+    BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule,LocalMaterialModule
   ],
   providers: [FormDataService,DarkModeService],
   bootstrap: [AppComponent]
