@@ -31,7 +31,7 @@ const routes: Routes = [
         path: ':cityName', // Define a parameter named cityName
         component: WeatherReportComponent,
       }
-    ],}
+    ],},
 ];
 
 @NgModule({
