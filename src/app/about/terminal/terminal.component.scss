@@ -133,30 +133,3 @@ $icon-color-green: $green;
   
 }
 
-@media only screen and (max-width:1040px) {
- 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .terminal {
-
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 75%;
-    height: auto;
-  }
-
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .top-section {
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-}
