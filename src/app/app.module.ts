@@ -27,6 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LocalMaterialModule } from './shared/local-material.module';
 import { WeatherReportComponent } from './weather-report/weather-report.component';
 import { WeatherUIComponent } from './weather-ui/weather-ui.component';
+import { TerminalComponent } from './about/terminal/terminal.component';
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +50,8 @@ import { WeatherUIComponent } from './weather-ui/weather-ui.component';
     DarkModeToggleComponent,
     WeatherReportComponent,
     WeatherUIComponent,
+    TerminalComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule,LocalMaterialModule

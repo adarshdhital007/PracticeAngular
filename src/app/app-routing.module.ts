@@ -12,6 +12,8 @@ import { JokeListComponent } from './joke-list/joke-list.component';
 import { Layout1Component } from './layout1/layout1.component';
 import { WeatherReportComponent } from './weather-report/weather-report.component';
 import { WeatherUIComponent } from './weather-ui/weather-ui.component';
+import { TerminalComponent } from './about/terminal/terminal.component';
+import { AboutComponent } from './about/about.component';
 const routes: Routes = [
   { path: '', component: Layout1Component },
   { path: 'adarsh', component: NgAdarshComponent },
@@ -23,6 +25,7 @@ const routes: Routes = [
   { path: 'form', component: FormComponentComponent },
   { path: 'date', component: DateListComponent },
   { path: 'joke', component: JokeListComponent },
+  { path: 'about', component: AboutComponent},
   {
     path: 'weather',
     component: WeatherUIComponent,
