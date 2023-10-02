@@ -61,7 +61,25 @@ $icon-color-green: $green;
 
 @media only screen and (max-width: 700px) {
   .terminal {
-    width: 80%;
+    width: 100%;
+    flex-direction: column;
+
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .top-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .terminal {
+    width: 70%;
     flex-direction: column;
 
   }
@@ -101,6 +119,33 @@ $icon-color-green: $green;
   .top-section {
     display: flex;
     justify-content: flex-start;
-
   }
+}
+
+@media only screen and (max-width: 495px) {
+  /* Your CSS styles for this range of screen widths go here */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .terminal {
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
 }
