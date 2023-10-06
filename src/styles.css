@@ -1,7 +1,4 @@
-html,
-body {
-  height: 100%;
-}
+
 .taylor-list:hover {
   color: #333;
   cursor: pointer;
@@ -10,8 +7,7 @@ body {
 
 .names {
   color: white;
-  font-size: 30px;
-  font-weight: 5900;
+  font-size: 20px;
 }
 
 /* Dark Mode */
@@ -101,7 +97,7 @@ body.dark-mode .weathertitle {
 }
 
 .large-navbar {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
 }
 .large-navbar li.nav-item a.nav-link {

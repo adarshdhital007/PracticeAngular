@@ -8,30 +8,30 @@
     </p>
 
     <div style="font-size: 21px">Location (Uppercase):</div>
-    <p style="font-size: 24px">{{ location | uppercase }}</p>
+    <p style="font-size: 20px">{{ location | uppercase }}</p>
 
     <div style="font-size: 21px">Temperature (Normal):</div>
-    <p style="font-size: 24px">{{ temperature }}</p>
+    <p style="font-size: 20px">{{ temperature }}</p>
 
     <div style="font-size: 21px">Temperature (Formatted):</div>
-    <p style="font-size: 24px">{{ temperature | number : "1.1-1" }}</p>
+    <p style="font-size: 20px">{{ temperature | number : "1.1-1" }}</p>
 
     <div style="font-size: 21px">Message (Lowercase):</div>
-    <p style="font-size: 24px">{{ message | lowercase }}</p>
+    <p style="font-size: 20px">{{ message | lowercase }}</p>
 
     <div style="font-size: 21px">Amount (Formatted):</div>
-    <p style="font-size: 24px">{{ amount | number : "2.2-2" }}</p>
+    <p style="font-size: 20px">{{ amount | number : "2.2-2" }}</p>
 
     <div style="font-size: 21px">Original Price :</div>
-    <p style="font-size: 24px">{{ price | currency }}</p>
+    <p style="font-size: 20px">{{ price | currency }}</p>
 
     <div style="font-size: 21px">Discounted Price :</div>
-    <p *ngIf="discountApplied" style="font-size: 24px">
+    <p *ngIf="discountApplied" style="font-size: 20px">
       {{ discountedPrice | currency }}
     </p>
 
     <div style="font-size: 21px">Discount Amount:</div>
-    <p style="font-size: 24px">
+    <p style="font-size: 20px">
       {{
         (isDiscounted ? price - calculateDiscountedPrice(price) : 0) | currency
       }}
