@@ -3,10 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-classhighlight',
   templateUrl: './classhighlight.component.html',
-  styles: [
-    '.selected { color: white; background-color: red; padding: 10px; margin: 10px }',
-    '.unselected { background-color: white; padding: 10px; margin: 10px }'
-  ]
+  styleUrls: ['./classhighlight.component.css']
 })
 export class ClassHighlightComponent {
   selectedAnimal = 'cat';

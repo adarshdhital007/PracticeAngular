@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-3">Stocks</h2>
+  <p class="text-center">{{ stocks.length }} Stocks</p>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col" class="sticky-left">Name</th>
+          <th scope="col">Price [$]</th>
+          <th scope="col">Change [$]</th>
+          <th scope="col">Change (%)</th>
+          <th scope="col">Market Cap</th>
+          <th scope="col">Volume</th>
+          <th scope="col">Dividend (%)</th>
+          <th scope="col" class="sticky-right"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let stock of stocks">
+          <td class="stock sticky-left">
+            <div class="d-flex align-items-center">
+              <img [src]="stock.src" [alt]="stock.name" class="stock-image mr-2">
+              <div>
+                <span class="stock-info__name">{{ stock.name }}</span>
+              </div>
+            </div>
+          </td>
+          <td>{{ stock.price }}</td>
+          <td class="price {{ stock.change >= 0 ? 'up' : 'down' }}">{{ stock.change }}</td>
+          <td class="price {{ stock.change >= 0 ? 'up' : 'down' }}">
+            {{ (stock.change / stock.price * 100).toFixed(2) }}
+          </td>
+          <td>{{ stock.marketCap }}</td>
+          <td>{{ stock.volume }}</td>
+          <td>{{ stock.dividendYield }}</td>
+          <td class="sticky-right">
+            <button class="btn btn-primary">Trade</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,14 +1,20 @@
 <div class="taylor-all container text-center mt-5">
   <h2>Taylor Swift Songs List</h2>
 
-  <!-- Input for searching songs or dates -->
-  <input class="searcher form-control text-center" type="text" [(ngModel)]="searchTerm" placeholder="Search songs or dates">
+  <input
+    class="searcher form-control text-center"
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search songs or dates"
+  />
 
-  <!-- Display a list of songs and their release dates with unique CSS classes -->
-  <div class=" d-flex justify-content-center align-items-center mt-3">
+  <div class="d-flex justify-content-center align-items-center mt-3">
     <ul class="taylor list-group">
-      <li class="taylor-list list-group-item" *ngFor="let info of songInfo | filterBy: searchTerm" >
-        {{ info.name }} - Released on {{ info.date | date:'longDate' }}
+      <li
+        class="taylor-list list-group-item"
+        *ngFor="let info of songInfo | filterBy : searchTerm"
+      >
+        {{ info.name }} - Released on {{ info.date | date : "longDate" }}
       </li>
     </ul>
   </div>

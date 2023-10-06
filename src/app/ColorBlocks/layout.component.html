@@ -1,15 +1,40 @@
-<div>
-  <p>Color Blocks</p>
-  <label for="options">Select an option:</label>
-  <select id="options" [(ngModel)]="selection">
-    <option *ngFor="let option of options" [value]="option">{{ option }}</option>
-  </select>
+<div class="container mt-4">
+  <h2>Color Blocks</h2>
+  <div class="form-group">
+    <label for="options">Select an option:</label>
+    <select id="options" class="form-control" [(ngModel)]="selection">
+      <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+    </select>
+  </div>
 
-  <div class='names' [ngClass]="{
-    'block1': selection === 'name',
-    'block2': selection === 'address',
-    'block3': selection === 'other'
+  <div class="card" [ngClass]="{
+    'bg-success': selection === 'name',
+    'bg-danger': selection === 'address',
+    'bg-primary': selection === 'other'
+  }">
+    <div class="card-body">
+      This is a colored block.
+    </div>
+  </div>
+</div>
+
+
+<!-- no bootstrap -->
+
+<!-- <div class="container mt-4">
+  <h2>Color Blocks</h2>
+  <div class="form-group">
+    <label for="options">Select an option:</label>
+    <select id="options" [(ngModel)]="selection">
+      <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+    </select>
+  </div>
+
+  <div class="colored-block" [ngClass]="{
+    'green-bg': selection === 'name',
+    'red-bg': selection === 'address',
+    'blue-bg': selection === 'other'
   }">
     This is a colored block.
   </div>
-</div>
+</div> -->

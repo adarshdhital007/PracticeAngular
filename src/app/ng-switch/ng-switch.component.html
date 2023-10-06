@@ -1,4 +1,21 @@
-<div *ngFor="let animal of animals">
-    <div [ngStyle]="getAnimalStyle(animal)" (click)="onAnimalClicked
-  ($event)">{{animal}}</div>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-4">
+      <div class="song-container">
+        <div
+          *ngFor="let song of songs"
+          (click)="onSongClicked($event)"
+          [ngClass]="{'selected': song.name === selectedSong}"
+        >
+          {{ song.name }}
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="song-details" [ngClass]="{'dark-mode': isDarkModeEnabled}">
+        <h2>Selected Song: {{ selectedSong }}</h2>
+        <p>{{ getSongDescription(selectedSong) }}</p>
+      </div>
+    </div>
   </div>
+</div>

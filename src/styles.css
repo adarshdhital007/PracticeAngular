@@ -1,29 +1,13 @@
-/* Regular Mode */
 .taylor-list:hover {
   color: #333;
   cursor: pointer;
   background-color: #50c878;
 }
 
-.navbar-brand {
-  color: black;
-}
-
 .names {
   color: white;
   font-size: 30px;
-  font-weight: 500;
-}
-
-.navdemo {
-  background-color: white;
-  color: black;
-}
-.navbar {
-  color: white;
-}
-.navbar:hover {
-  color: white;
+  font-weight: 5900;
 }
 
 /* Dark Mode */
@@ -108,8 +92,58 @@ body.dark-mode .navbar-toggler {
   background-color: white;
 }
 
-body.dark-mode .weathertitle{
-  color:black;
+body.dark-mode .weathertitle {
+  color: black;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.large-navbar {
+  font-size: 25px;
+  font-weight: 400;
+}
+.large-navbar li.nav-item a.nav-link {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.large-navbar li.nav-item a.nav-link:hover {
+  color: green; 
+  text-decoration: underline; 
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: "Tinos";
+  src: url(./assets/Tinos-Regular.ttf);
+}
+
+body {
+  font-family: "Tinos";
+  font-size: 20px;
+}
+
+body.dark-mode .nav-item .nav-link {
+  color: white;
+  background-color: transparent; 
+  text-decoration: none; 
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body.dark-mode .nav-item:hover .nav-link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none; 
+}
+
+/* Dark Mode for Description */
+body.dark-mode .song-details {
+  color: white;
+  background-color: #333; 
+}
+
+body.dark-mode .song-details h2 {
+  color: white; 
+}
+
+body.dark-mode .song-details p {
+  color: white; 
+}

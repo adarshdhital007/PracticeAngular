@@ -12,8 +12,10 @@ import { JokeListComponent } from './joke-list/joke-list.component';
 import { Layout1Component } from './layout1/layout1.component';
 import { WeatherReportComponent } from './weather-report/weather-report.component';
 import { WeatherUIComponent } from './weather-ui/weather-ui.component';
-import { TerminalComponent } from './about/terminal/terminal.component';
 import { AboutComponent } from './about/about.component';
+import { StockresponsiveComponent } from './stockresponsive/stockresponsive.component';
+import { CarouselComponent } from './carousel/carousel.component';
+
 const routes: Routes = [
   { path: '', component: Layout1Component },
   { path: 'adarsh', component: NgAdarshComponent },
@@ -26,6 +28,8 @@ const routes: Routes = [
   { path: 'date', component: DateListComponent },
   { path: 'joke', component: JokeListComponent },
   { path: 'about', component: AboutComponent},
+  { path: 'stock', component: StockresponsiveComponent},
+  { path: 'carousel', component: CarouselComponent},
   {
     path: 'weather',
     component: WeatherUIComponent,

@@ -1,0 +1,18 @@
+.container {
+  height: 100%;
+}
+
+.customer-list {
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.cus {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 15px;
+}

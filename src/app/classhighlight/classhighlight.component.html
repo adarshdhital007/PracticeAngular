@@ -1,9 +1,12 @@
-<div class="animals">
-  <ul>
-    <li *ngFor="let animal of animals" 
-        [ngClass]="{'selected': animal === selectedAnimal, 'unselected': animal !== selectedAnimal}" 
-        (click)="onAnimalClicked($event)">
-      {{ animal }}
-    </li>
-  </ul>
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="custom-box">
+    <ul class="custom-list">
+      <li *ngFor="let animal of animals" 
+          class="custom-list-item"
+          [ngClass]="{'selected': animal === selectedAnimal}" 
+          (click)="onAnimalClicked($event)">
+        {{ animal }}
+      </li>
+    </ul>
+  </div>
 </div>

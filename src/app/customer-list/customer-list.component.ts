@@ -2,25 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-customer-list',
-  template: `
-    <div class="customerList">
-      <p class='cus'>
-        Customers 
-      </p>
-      <app-customer></app-customer>
-      <app-customer></app-customer>
-      <app-customer></app-customer>
-    </div>
-  `,
-  styles: [`
-    .customerList {
-      background-color: #80ced6;
-      margin: 10px;
-      padding: 10px;
-    }
-  `]
+  templateUrl: './customer-list.component.html', // Use the HTML file
+  styleUrls: ['./customer-list.component.css'] // Use the CSS file
 })
 export class CustomerListComponent implements OnInit {
+
   constructor() { }
 
   ngOnInit() {

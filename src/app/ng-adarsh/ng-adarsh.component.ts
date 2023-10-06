@@ -2,14 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ng-adarsh',
-  templateUrl: './ng-adarsh.component.html'
+  templateUrl: './ng-adarsh.component.html',
+  styleUrls: ['./ng-adarsh.component.css']
 })
 export class NgAdarshComponent {
   currentDate: Date = new Date();
-  name: string = 'Adarsh Dhital';
+  location: string = 'My Room';
   price: number = 19.99;
-  temperature: number = 25.5;
-  message: string = 'Hello, Angular Pipes!';
+  temperature: number = 25.48981273509146;
+  message: string = 'Hello, fellas!';
   amount: number = 12345.6789;
   isDiscounted: boolean = false;
 

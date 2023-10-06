@@ -1,28 +1,49 @@
-<div>Current Date:</div>
-<p class="font-weight-bold">{{ currentDate | date }}</p>
+<div
+  class="container-fluid d-flex justify-content-center align-items-center mt-3"
+>
+  <div class="col-md-4 text-center p-5 border rounded shadow-lg">
+    <div style="font-size: 21px">Current Date:</div>
+    <p class="font-weight-bold" style="font-size: 24px">
+      {{ currentDate | date }}
+    </p>
 
-<div>Name (Uppercase):</div>
-<p>{{ name | uppercase }}</p>
+    <div style="font-size: 21px">Location (Uppercase):</div>
+    <p style="font-size: 24px">{{ location | uppercase }}</p>
 
-<div>Temperature (Formatted):</div>
-<p>{{ temperature | number:'1.1-1' }}</p>
+    <div style="font-size: 21px">Temperature (Normal):</div>
+    <p style="font-size: 24px">{{ temperature }}</p>
 
-<div>Message (Lowercase):</div>
-<p>{{ message | lowercase }}</p>
+    <div style="font-size: 21px">Temperature (Formatted):</div>
+    <p style="font-size: 24px">{{ temperature | number : "1.1-1" }}</p>
 
-<div>Amount (Formatted):</div>
-<p>{{ amount | number:'2.2-2' }}</p>
+    <div style="font-size: 21px">Message (Lowercase):</div>
+    <p style="font-size: 24px">{{ message | lowercase }}</p>
 
-<div>Original Price :</div>
-<p>{{ price | currency }}</p>
+    <div style="font-size: 21px">Amount (Formatted):</div>
+    <p style="font-size: 24px">{{ amount | number : "2.2-2" }}</p>
 
-<div>Discounted Price :</div>
-<p *ngIf="discountApplied">{{ discountedPrice | currency }}</p>
+    <div style="font-size: 21px">Original Price :</div>
+    <p style="font-size: 24px">{{ price | currency }}</p>
 
-<div>Discount Amount:</div>
-<p>{{ (isDiscounted ? (price - calculateDiscountedPrice(price)) : 0) | currency }}</p>
+    <div style="font-size: 21px">Discounted Price :</div>
+    <p *ngIf="discountApplied" style="font-size: 24px">
+      {{ discountedPrice | currency }}
+    </p>
 
-<button (click)="toggleDiscount()" [disabled]="discountApplied">
-    {{ discountApplied ? 'Discount Applied' : 'Toggle Discount' }}
-  </button>
-  
+    <div style="font-size: 21px">Discount Amount:</div>
+    <p style="font-size: 24px">
+      {{
+        (isDiscounted ? price - calculateDiscountedPrice(price) : 0) | currency
+      }}
+    </p>
+
+    <button
+      (click)="toggleDiscount()"
+      [disabled]="discountApplied"
+      class="btn btn-primary mt-4"
+      style="font-size: 21px"
+    >
+      {{ discountApplied ? "Discount Applied" : "Toggle Discount" }}
+    </button>
+  </div>
+</div>

@@ -21,10 +21,10 @@ import { Component, OnInit } from '@angular/core';
   ],
 })
 export class Cust1ListComponent implements OnInit {
-  public customerList = [ // Change private to public here
-    { name: 'Brian', city: 'Atlanta' },
-    { name: 'Peter', city: 'San Francisco' },
-    { name: 'Janet', city: 'Colorado' },
+  public customerList = [ 
+    { name: 'Adarsh', city: 'Nepal' },
+    { name: 'Fet', city: 'Nepal' },
+    { name: 'Taylor', city: '' },
   ];
 
   constructor() { }
