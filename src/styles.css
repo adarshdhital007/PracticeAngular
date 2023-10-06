@@ -1,3 +1,7 @@
+html,
+body {
+  height: 100%;
+}
 .taylor-list:hover {
   color: #333;
   cursor: pointer;
@@ -101,15 +105,15 @@ body.dark-mode .weathertitle {
   font-weight: 400;
 }
 .large-navbar li.nav-item a.nav-link {
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    text-decoration 0.3s ease-in-out;
 }
 
 .large-navbar li.nav-item a.nav-link:hover {
-  color: green; 
-  text-decoration: underline; 
+  color: green;
+  text-decoration: underline;
   font-weight: bold;
 }
-
 
 @font-face {
   font-family: "Tinos";
@@ -123,27 +127,27 @@ body {
 
 body.dark-mode .nav-item .nav-link {
   color: white;
-  background-color: transparent; 
-  text-decoration: none; 
+  background-color: transparent;
+  text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 body.dark-mode .nav-item:hover .nav-link {
   color: black;
   background-color: transparent;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 /* Dark Mode for Description */
 body.dark-mode .song-details {
   color: white;
-  background-color: #333; 
+  background-color: #333;
 }
 
 body.dark-mode .song-details h2 {
-  color: white; 
+  color: white;
 }
 
 body.dark-mode .song-details p {
-  color: white; 
+  color: white;
 }
