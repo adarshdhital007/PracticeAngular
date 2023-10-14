@@ -1,3 +1,9 @@
+* {
+  -webkit-user-select: none; /* Safari and other webkit browsers */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard syntax */
+}
 
 .taylor-list:hover {
   color: #333;
@@ -5,6 +11,13 @@
   background-color: #50c878;
 }
 
+body .customer{
+  color:white;
+}
+
+body.dark-mode h2.cus {
+  color: black;
+}
 .names {
   color: white;
   font-size: 20px;

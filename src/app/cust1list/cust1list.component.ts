@@ -24,7 +24,7 @@ export class Cust1ListComponent implements OnInit {
   public customerList = [ 
     { name: 'Adarsh', city: 'Nepal' },
     { name: 'Fet', city: 'Nepal' },
-    { name: 'Taylor', city: '' },
+    { name: 'Taylor', city: 'California' },
   ];
 
   constructor() { }

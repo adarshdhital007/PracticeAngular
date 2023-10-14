@@ -9,13 +9,16 @@ export class FilterByPipe implements PipeTransform {
       return items;
     }
 
-    searchTerm = searchTerm.toLowerCase();
-    
+    const searchTerms = searchTerm.toLowerCase().split(' ');
+
     return items.filter(item => {
-      // Extract the date property and convert it to a string
       const formattedDate = item.date.toDateString().toLowerCase();
-      // Check if either the date or the name includes the searchTerm
-      return formattedDate.includes(searchTerm) || item.name.toLowerCase().includes(searchTerm);
+      const formattedName = item.name.toLowerCase();
+
+      return searchTerms.every(term => {
+        // Check if any word in the search term is included in the date or name
+        return formattedDate.includes(term) || formattedName.includes(term);
+      });
     });
   }
 }

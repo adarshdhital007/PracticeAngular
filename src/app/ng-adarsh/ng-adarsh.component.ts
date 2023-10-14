@@ -20,8 +20,8 @@ export class NgAdarshComponent {
   discountedPrice: number | null = null; // Initialize to null
   discountedPriceFormatted: string = '';
 
-  // isFahrenheit: boolean = true;
   // <!-- Display temperature in Fahrenheit or Celsius based on isFahrenheit -->
+  // isFahrenheit: boolean = true;
   // <p>Temperature: {{ temperature | number:'1.1-1' }} {{ isFahrenheit ? '°F' : '°C' }}</p>
   
   // <!-- Button to toggle temperature unit -->

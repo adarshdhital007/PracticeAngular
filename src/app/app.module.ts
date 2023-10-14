@@ -19,7 +19,6 @@ import { JokeAddComponent } from './joke-list/joke-add/joke-add.component';
 import { FormDataService } from './form-component/form-data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { Layout1Component } from './layout1/layout1.component';
-import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component';
 import { DarkModeService } from './dark-mode.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LocalMaterialModule } from './weather-ui/shared/local-material.module';
@@ -51,7 +50,6 @@ import { Cust1Component } from './cust1list/cust1/cust1.component';
     JokeComponent,
     JokeAddComponent,
     Layout1Component,
-    DarkModeToggleComponent,
     WeatherReportComponent,
     WeatherUIComponent,
     TerminalComponent,
@@ -61,7 +59,7 @@ import { Cust1Component } from './cust1list/cust1/cust1.component';
     CarouselComponent,
   ],
   imports: [
-    BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule, LocalMaterialModule,CarouselModule.forRoot(),
+    BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule, LocalMaterialModule, CarouselModule.forRoot(),
   ],
   providers: [FormDataService, DarkModeService],
   bootstrap: [AppComponent]
