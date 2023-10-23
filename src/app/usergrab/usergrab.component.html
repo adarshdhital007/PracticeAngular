@@ -1,0 +1,35 @@
+<div class="form-group">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Search by firstname, lastname, or birthdate"
+    [(ngModel)]="searchQuery"
+    (input)="searchUsers()"
+  />
+</div>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Birthdate</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let user of filteredUsers">
+    <td [ngClass]="{ highlighted: isMatch(user.first_name) && searchQuery }">
+      {{ user.first_name }}
+    </td>
+    <td [ngClass]="{ highlighted: isMatch(user.last_name) && searchQuery }">
+      {{ user.last_name }}
+    </td>
+    <td [ngClass]="{ highlighted: isMatch(user.birthdate) && searchQuery }">
+      {{ user.birthdate }}
+    </td>
+    <td
+      [ngClass]="{ highlighted: isMatch(user.age.toString()) && searchQuery }"
+    >
+      {{ user.age }}
+    </td>
+  </tr>
+</table>
