@@ -15,7 +15,7 @@ import { WeatherUIComponent } from './weather-ui/weather-ui.component';
 import { AboutComponent } from './about/about.component';
 import { StockresponsiveComponent } from './stockresponsive/stockresponsive.component';
 import { CarouselComponent } from './carousel/carousel.component';
-
+import { UsergrabComponent } from './usergrab/usergrab.component';
 const routes: Routes = [
   { path: '', component: Layout1Component },
   { path: 'adarsh', component: NgAdarshComponent },
@@ -27,9 +27,10 @@ const routes: Routes = [
   { path: 'form', component: FormComponentComponent },
   { path: 'date', component: DateListComponent },
   { path: 'joke', component: JokeListComponent },
-  { path: 'about', component: AboutComponent},
-  { path: 'stock', component: StockresponsiveComponent},
-  { path: 'carousel', component: CarouselComponent},
+  { path: 'about', component: AboutComponent },
+  { path: 'stock', component: StockresponsiveComponent },
+  { path: 'carousel', component: CarouselComponent },
+  { path: 'usergrabjson', component: UsergrabComponent },
   {
     path: 'weather',
     component: WeatherUIComponent,
@@ -37,12 +38,13 @@ const routes: Routes = [
       {
         path: ':cityName', // Define a parameter named cityName
         component: WeatherReportComponent,
-      }
-    ],},
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

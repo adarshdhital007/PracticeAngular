@@ -31,6 +31,7 @@ import { CarouselItemComponent } from './carousel/carousel-item/carousel-item.co
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { Cust1Component } from './cust1list/cust1/cust1.component';
+import { UsergrabComponent } from './usergrab/usergrab.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { Cust1Component } from './cust1list/cust1/cust1.component';
     StockresponsiveComponent,
     CarouselItemComponent,
     CarouselComponent,
+    UsergrabComponent,
   ],
   imports: [
     BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule, LocalMaterialModule, CarouselModule.forRoot(),
