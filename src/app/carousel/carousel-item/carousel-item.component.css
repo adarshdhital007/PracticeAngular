@@ -1,7 +1,7 @@
 /* Custom styles for carousel controls */
 #image-carousel {
-  width: 80%;
-  margin: 0 auto;
+  width: 75%;
+  margin-top:-100px;
 }
 
 .custom-icon {
@@ -43,6 +43,12 @@
 }
 
 @media (max-width: 375px) {
+  #image-carousel {
+    width: 100%;
+    margin-top:-100px;
+    margin-bottom:0px;
+  
+  }
   .custom-icon {
     background-color: #007bff;
     border-radius: 50%;
