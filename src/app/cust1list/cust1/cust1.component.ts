@@ -11,6 +11,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
     `
       .customer {
         background-color: #fefbd8;
+        color:black;
         margin: 10px;
         padding: 10px;
         cursor: pointer; 

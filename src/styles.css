@@ -88,12 +88,15 @@ body.dark-mode .sjoke {
 }
 
 body.dark-mode .customerList {
-  color: black;
-  background-color: #333;
+  background-color: #fefbd8;
 }
 
 body.dark-mode .custname {
-  color: white;
+  color: black;
+}
+body.dark-mode .customer {
+  color:white;
+  background-color: #80ced6;
 }
 
 body.dark-mode .animals {
