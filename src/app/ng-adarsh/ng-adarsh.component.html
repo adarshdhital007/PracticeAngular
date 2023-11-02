@@ -1,49 +1,52 @@
-<div
-  class="container-fluid d-flex justify-content-center align-items-center mt-3"
->
-  <div class="col-md-4 text-center p-5 border rounded shadow-lg">
-    <div style="font-size: 21px">Current Date:</div>
-    <p class="font-weight-bold" style="font-size: 24px">
-      {{ currentDate | date }}
-    </p>
+<div class="container mt-5">
+  <div class="row justify-content-center text-center">
+    <div class="col">
+      <div class="card shadow narrow-card">
+        <div class="card-body">
+          <h5 class="card-title">Current Date</h5>
+          <p class="card-text font-weight-bold">{{ currentDate | date }}</p>
 
-    <div style="font-size: 21px">Location (Uppercase):</div>
-    <p style="font-size: 20px">{{ location | uppercase }}</p>
+          <h5 class="card-title">Location (Uppercase)</h5>
+          <p class="card-text">{{ location | uppercase }}</p>
 
-    <div style="font-size: 21px">Temperature (Normal):</div>
-    <p style="font-size: 20px">{{ temperature }}</p>
+          <h5 class="card-title">Temperature (Normal)</h5>
+          <p class="card-text">{{ temperature }}</p>
 
-    <div style="font-size: 21px">Temperature (Formatted):</div>
-    <p style="font-size: 20px">{{ temperature | number : "1.1-1" }}</p>
+          <h5 class="card-title">Temperature (Formatted)</h5>
+          <p class="card-text">{{ temperature | number : "1.1-1" }}</p>
 
-    <div style="font-size: 21px">Message (Lowercase):</div>
-    <p style="font-size: 20px">{{ message | lowercase }}</p>
+          <h5 class="card-title">Message (Lowercase)</h5>
+          <p class="card-text">{{ message | lowercase }}</p>
 
-    <div style="font-size: 21px">Amount (Formatted):</div>
-    <p style="font-size: 20px">{{ amount | number : "2.2-2" }}</p>
+          <h5 class="card-title">Amount (Formatted)</h5>
+          <p class="card-text">{{ amount | number : "2.2-2" }}</p>
 
-    <div style="font-size: 21px">Original Price :</div>
-    <p style="font-size: 20px">{{ price | currency }}</p>
+          <h5 class="card-title">Original Price</h5>
+          <p class="card-text">{{ price | currency }}</p>
 
-    <div style="font-size: 21px">Discounted Price :</div>
-    <p *ngIf="discountApplied" style="font-size: 20px">
-      {{ discountedPrice | currency }}
-    </p>
+          <h5 class="card-title">Discounted Price</h5>
+          <p *ngIf="discountApplied" class="card-text">
+            {{ discountedPrice | currency }}
+          </p>
 
-    <div style="font-size: 21px">Discount Amount:</div>
-    <p style="font-size: 20px">
-      {{
-        (isDiscounted ? price - calculateDiscountedPrice(price) : 0) | currency
-      }}
-    </p>
+          <h5 class="card-title">Discount Amount</h5>
+          <p class="card-text">
+            {{
+              isDiscounted
+                ? (price - calculateDiscountedPrice(price) | currency)
+                : "0"
+            }}
+          </p>
 
-    <button
-      (click)="toggleDiscount()"
-      [disabled]="discountApplied"
-      class="btn btn-primary mt-4"
-      style="font-size: 21px"
-    >
-      {{ discountApplied ? "Discount Applied" : "Toggle Discount" }}
-    </button>
+          <button
+            (click)="toggleDiscount()"
+            [disabled]="discountApplied"
+            class="btn btn-primary mt-4"
+          >
+            {{ discountApplied ? "Discount Applied" : "Toggle Discount" }}
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
